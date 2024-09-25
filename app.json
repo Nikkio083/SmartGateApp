@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "SmartGate",
+    "slug": "SmartGate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./Images/Smart.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./Images/SmartGate.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#101720"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nikkio083.SmartGate",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show nearby places of interest."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./Images/SmartGate Icon.png",
+        "backgroundColor": "#101720"
+      },
+      "package": "com.nikkio083.SmartGate"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e27f7450-ce25-4a31-8844-4f1120a03675"
+      }
+    }
+  }
+}
