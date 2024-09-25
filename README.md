@@ -14,7 +14,7 @@ Follow these steps to set up the app locally:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/smartgate-react-native.git
+git clone https://github.com/Nikkio083/SmartGateApp.git
 cd smartgate-react-native
 ```
 2. Install dependencies: Make sure you have Node.js installed, then run:
