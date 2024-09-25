@@ -61,23 +61,24 @@ const Targhe = () => {
     const formData = new FormData();
     formData.append('image', {
       uri: image,
-      name: 'face.jpg', // or use a dynamic name based on the image file
-      type: 'image/jpeg', // or the correct MIME type
+      name: 'face.jpg',
+      type: 'image/jpeg',
     });
 
     try {
-      const response = await fetch('http://192.168.187.113:5000/upload_face', {
+      const response = await fetch('http://192.168.1.19:5000/upload_face', {
         method: 'POST',
         body: formData,
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
+
       const data = await response.json();
       Alert.alert(data.message);
-      setImage(null); // Reset image after upload
+      setImage(null);
     } catch (error) {
-      console.error(error);
+      console.error('Error uploading face:', error);
       Alert.alert('Failed to upload image.');
     }
   };
@@ -89,22 +90,23 @@ const Targhe = () => {
     }
 
     try {
-      const response = await fetch('http://your-server-ip:5000/add_plate', {
+      const response = await fetch('http://192.168.1.19:5000/add_plate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ plate: licensePlate }),
       });
+
       const data = await response.json();
       if (response.ok) {
         Alert.alert(data.message);
-        setLicensePlate(''); // Clear input after submission
+        setLicensePlate('');
       } else {
         Alert.alert(data.error);
       }
     } catch (error) {
-      console.error(error);
+      console.error('Error adding plate:', error);
       Alert.alert('Failed to add plate.');
     }
   };
