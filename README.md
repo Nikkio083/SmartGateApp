@@ -33,7 +33,9 @@ To set up the app locally, follow these steps:
     ```bash
     npm install
     ```
-3. Run the app:
+3. Change the IP adresses in the Volti and Targhe screen
+
+4. Run the app:
     ```bash
     npm start
     ```
@@ -52,8 +54,7 @@ Here’s an overview of the app structure:
 - **App.js**: The entry point of the app, initializing navigation and screens such as Dashboard, Volti, Targhe, Cars, and Impostazione.
 - **Screens**:
   - **Dashboard.js**: Displays the main dashboard functionalities.
-  - **Volti.js**: Manages face recognition tasks and uploads.
-  - **Targhe.js**: Handles license plate recognition and uploads.
+  - **Volti e Targhe.js**: Handles license plate and faces recognition and uploads.
   - **Cars.js**: Contains vehicle-related information.
   - **Impostazione.js**: Provides options to configure server settings and app preferences.
 
