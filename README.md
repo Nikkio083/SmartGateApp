@@ -70,9 +70,10 @@ npm install react-native-paper @react-navigation/native @react-navigation/native
 ```
 
 ## How it works
-1. The app initializes with a splash screen that stays visible for 2 seconds before transitioning to the main dashboard.
-2. Users can navigate between different screens such as Volti, Targhe, and Cars to perform face and plate recognition tasks.
-3. The Impostazione screen allows users to customize settings.
+1. The app launches with a splash screen, which transitions to the main dashboard after 2 seconds.
+2. Users can navigate between screens such as Volti and Targhe to upload and manage face or license plate data.
+3. The Volti and Targhe screens allow for image capture or file upload, which are then sent to the server for recognition.
+4. The Impostazione screen allows users to customize settings.
 
 
 ## Contribution
