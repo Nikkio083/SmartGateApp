@@ -11,7 +11,7 @@ SmartGate is a React Native app designed for face and license plate recognition,
 - **Impostazione (Settings)**: Configure the app settings and server connection.
 
 ### Server Integration
-The app connects to the SmartGate server to manage recognized faces and license plates:
+The app connects to the SmartGate server [[https://github.com/k0m1d3v/SmartGate]] to manage recognized faces and license plates:
 - Users can **upload new face images** or license plate photos directly to the server from their mobile device. 
 - Once uploaded, the server processes these images and updates the database for real-time recognition at the gate.
 - Future updates will allow for **removal** of faces and license plates, as well as editing existing entries.
