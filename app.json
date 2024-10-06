@@ -24,7 +24,20 @@
         "foregroundImage": "./Images/SmartGate Icon.png",
         "backgroundColor": "#101720"
       },
-      "package": "com.nikkio083.SmartGate"
+      "package": "com.nikkio083.SmartGate",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "useNextNotificationsApi": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      },
+      "versionCode": 2,
+      "enableDangerousExperimentalLeanBuilds": true
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -3,8 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider as PaperProvider } from 'react-native-paper';
 import Dashboard from './screens/Dashboard';
-import Volti from './screens/Volti';
-import Targhe from './screens/Targhe';
+import VoltieTarghe from './screens/Volti e Targhe';
 import * as SplashScreen from 'expo-splash-screen';
 import cars from './screens/Cars';
 import Impostazione from './screens/Impostazione';
@@ -32,8 +31,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="SmartGate">
           <Stack.Screen name="SmartGate" component={Dashboard} />
-          <Stack.Screen name="Volti" component={Volti} />
-          <Stack.Screen name="Targhe" component={Targhe} />
+          <Stack.Screen name="Volti e Targhe" component={VoltieTarghe} />
           <Stack.Screen name="Cars" component={cars} />
           <Stack.Screen name="Impostazione" component={Impostazione} />
         </Stack.Navigator>

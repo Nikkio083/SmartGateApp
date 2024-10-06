@@ -29,19 +29,11 @@ const Dashboard = ({ navigation }) => {
         <Image style={styles.image} source={require('../Images/SmartGate Icon.png')}></Image>
       </View>
       <View style={styles.row}>
-        <TouchableOpacity style={styles.cell} onPress={() => handleCardPress('Volti')}>
+        <TouchableOpacity style={styles.cell} onPress={() => handleCardPress('Volti e Targhe')}>
           <Card style={styles.card}>
             <Card.Content>
-              <Title>Volti</Title>
-              <Paragraph>Gestisci Volti</Paragraph>
-            </Card.Content>
-          </Card>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.cell} onPress={() => handleCardPress('Targhe')}>
-          <Card style={styles.card}>
-            <Card.Content>
-              <Title>Targhe</Title>
-              <Paragraph>Gestisci Targhe</Paragraph>
+              <Title>Volti e Targhe</Title>
+              <Paragraph>Gestisci Caricamenti</Paragraph>
             </Card.Content>
           </Card>
         </TouchableOpacity>
